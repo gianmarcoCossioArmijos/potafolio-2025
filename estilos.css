@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    background: #0C0C0C;
+    background: radial-gradient(circle, rgba(12, 12, 12, 1) 60%, rgba(41, 41, 41, 1) 100%);
+}
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.23);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.04) 0%, rgba(255, 255, 255, 0.05) 100%);
+}
+main {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background: #d900ff;
+background: linear-gradient(360deg, rgba(217, 0, 255, 0.05) 0%, rgba(255, 255, 255, 0) 49%);
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* navbar styles */
+.navbar-container {
+	display: flex;
+    flex-direction: row;
+	align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+	border: 1.5px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+.navbar-container img {
+    height: 40px;
+    width: 40px;
+}
+
+/* slider styles */
+.slider {
+    width: 100%;
+    height: 100vh;
+    flex: none;
+    position: relative;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: 1.3rem;
+}
+.slider-stack{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    position: sticky;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    scroll-snap-align: center;
+    margin: auto;
+}
+.stack-icon{
+    object-fit: contain;
+    width: 20%;
+    height: 20%;
+    box-sizing: border-box;
+}
+.slider-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: sticky;
+    object-fit: contain;
+    max-width: 60%;
+    height: 100%;
+    scroll-snap-align: center;
+    margin: auto;
+}
+.slider-experience{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    object-fit: contain;
+    max-width: 60%;
+    height: 100%;
+    padding-top: 30px;
+    scroll-snap-align: center;
+    margin: auto;
+}
+.slider-arrow-container{
+    height: 100%;
+}
+.slider-arrow-head{
+    display: flex;
+    align-items: center;
+    justify-content:baseline;
+    width: auto;
+    height: auto;
+}
+.slider-arrow{
+    margin-left: 46%;
+    margin-right: 46%;
+    width: auto;
+    height: 90%;
+    border: 1px solid rgb(255, 255, 255);
+}
+.slider-arrow-tail{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    width: auto;
+    height: auto;
+}
+.slider-experience ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+    justify-content: center;
+    max-width: 90%;
+    height: 100%;
+    padding-left: 40px;
+}
+.slider-img{
+    padding: 2rem;
+    max-width: 100%;
+    height: 100%;
+    position: sticky;
+    object-fit: contain;
+    display: inline-block;
+    scroll-snap-align: center;
+}
+.slider p {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 25px;
+}
+.slider button {
+    display: block;
+    width: 200px;
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    border: 1.5px transparent;
+    background-color: rgb(40, 141, 0);
+    color: white;
+}
+.app-img{
+    padding: 2rem;
+    max-width: 100%;
+    height: 100%;
+    position: sticky;
+    object-fit: contain;
+    scroll-snap-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 2.5rem;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+/* contact styles */
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 1.5rem 0 1.5rem 0;
+    justify-content: center;
+    font-size: 10px;
+}
+.contact img {
+    height: 40px;
+    width: 40px;
+}
+
+@media (min-width: 450px) {
+  body {
+    font-size: 15px;
+  } 
+}
